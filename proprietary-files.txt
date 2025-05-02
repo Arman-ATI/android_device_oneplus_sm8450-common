@@ -1040,8 +1040,8 @@ system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/hw/qcrilNrd
 vendor/bin/ks
-vendor/bin/qtigetprop
-vendor/bin/qtisetprop
+#vendor/bin/qtigetprop;DISABLE_CHECKELF
+#vendor/bin/qtisetprop;DISABLE_CHECKELF
 vendor/etc/init/qcrilNrd.rc
 vendor/etc/qcril_database/upgrade/config/10.0_config.sql
 vendor/etc/qcril_database/upgrade/config/11.0_config.sql
