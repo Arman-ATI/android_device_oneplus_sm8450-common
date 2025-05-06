@@ -95,9 +95,6 @@ vendor.qc2audio.per_frame.flac.dec.enabled=true
 # Camera
 vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram,us.zoom.videomeetings
 
-# Chipset
-ro.soc.manufacturer=QTI
-
 # DPM
 persist.vendor.dpm.vndr.feature=11
 persist.vendor.dpm.vndr.halservice.enable=1
@@ -178,6 +175,10 @@ debug.stagefright.c2inputsurface=-1
 ro.netflix.bsp_rev=Q8450-34634-1
 
 # Perf
+ro.vendor.beluga.c=0x4800
+ro.vendor.beluga.p=0x3
+ro.vendor.beluga.s=0x900
+ro.vendor.beluga.t=0x240
 ro.vendor.extension_library=libqti-perfd-client.so
 
 # Radio

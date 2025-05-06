@@ -201,7 +201,7 @@ vendor/etc/cne/profileMwqem.xml
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/init/cnd.rc
 vendor/etc/init/mutualex.rc
-vendor/lib64/libcne.so
+vendor/lib64/libcne.so;DISABLE_CHECKELF
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
 vendor/lib64/libcneqmiutils.so
@@ -506,7 +506,6 @@ vendor/firmware/evautil64.mdt
 vendor/etc/init/init.qti.fm.rc
 vendor/etc/init.qti.fm.sh
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -557,7 +556,7 @@ vendor/bin/edgnss-daemon
 vendor/bin/engine-service
 vendor/bin/garden_app
 vendor/bin/loc_launcher
-vendor/bin/lowi-server
+vendor/bin/lowi-server;DISABLE_CHECKELF
 vendor/bin/mlid
 vendor/bin/slim_daemon
 vendor/bin/xtra-daemon
@@ -1233,6 +1232,10 @@ vendor/lib64/libssc_default_listener.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
+# RichTap
+odm/etc/aac_richtap.config
+odm/lib64/libaacvibrator.so:vendor/lib64/libaacvibrator.so
+
 # Snapdragon Computer Vision Engine
 vendor/etc/eva/facedetection/model3.dat
 vendor/etc/face3d/qcnn_concat_file_model-0324_2_encrypted
@@ -1293,6 +1296,7 @@ odm/firmware/tp/21631/FW_S3908_SAMSUNG.img
 odm/firmware/tp/21631/FW_S3908_SAMSUNG_FAE.img
 odm/firmware/tp/21631/LIMIT_S3908_SAMSUNG.img
 odm/firmware/tp/21631/LIMIT_S3908_SAMSUNG_AGING.img
+odm/bin/touchHidlTest
 
 # Trusted Execution Environment connector
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
