@@ -1281,6 +1281,7 @@ odm/firmware/tp/21631/FW_S3908_SAMSUNG.img
 odm/firmware/tp/21631/FW_S3908_SAMSUNG_FAE.img
 odm/firmware/tp/21631/LIMIT_S3908_SAMSUNG.img
 odm/firmware/tp/21631/LIMIT_S3908_SAMSUNG_AGING.img
+odm/lib64/vendor.oplus.hardware.touch-V2-ndk_platform.so
 odm/bin/touchHidlTest
 
 # Trusted Execution Environment connector
