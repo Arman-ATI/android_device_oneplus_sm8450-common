@@ -48,9 +48,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    'odm/bin/hw/vendor.oplus.hardware.charger-V6-service': blob_fixup()
-        .add_needed('libbase_shim.so')
-        .replace_needed('vendor.oplus.hardware.osense.client-V1-ndk_platform.so', 'vendor.oplus.hardware.osense.client-V1-ndk.so'),
+    'odm/bin/hw/vendor.oplus.hardware.charger-V10-service': blob_fixup()
+        .add_needed('libbase_shim.so'),
     'odm/bin/hw/vendor-oplus-hardware-performance-V1-service': blob_fixup()
         .add_needed('libbase_shim.so')
         .add_needed('libprocessgroup_shim.so'),
@@ -73,7 +72,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/qguard': blob_fixup()
         .add_needed('libbase_shim.so'),
     'vendor/bin/hw/vendor.qti.hardware.display.composer-service': blob_fixup()
-        .replace_needed('vendor.qti.hardware.display.config-V5-ndk_platform.so', 'vendor.qti.hardware.display.config-V5-ndk.so'),
+        .replace_needed('vendor.qti.hardware.display.config-V5-ndk_platform.so', 'vendor.qti.hardware.display.config-V5-ndk.so')
+        .replace_needed('android.hardware.common-V2-ndk_platform.so', 'android.hardware.common-V2-ndk.so'),
     ('vendor/etc/media_cape/video_system_specs.json', 'vendor/etc/media_taro/video_system_specs.json'): blob_fixup()
         .regex_replace('"max_retry_alloc_output_timeout": 10000,', '"max_retry_alloc_output_timeout": 0,'),
     ('vendor/etc/media_codecs_cape.xml', 'vendor/etc/media_codecs_cape_vendor.xml', 'vendor/etc/media_codecs_taro.xml', 'vendor/etc/media_codecs_taro_vendor.xml'): blob_fixup()
