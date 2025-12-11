@@ -81,6 +81,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.security.secureclock-V1-ndk_platform.so', 'android.hardware.security.secureclock-V1-ndk.so')
         .replace_needed('android.hardware.security.sharedsecret-V1-ndk_platform.so', 'android.hardware.security.sharedsecret-V1-ndk.so')
         .add_needed('android.hardware.security.rkp-V1-ndk.so'),
+    ('odm/bin/touchDaemon', 'odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff', 'vendor/bin/poweropt-service', 'vendor/lib64/libaodoptfeature.so', 'vendor/lib64/libapengine.so', 'vendor/lib64/libdpps.so', 'vendor/lib64/libpowercore.so', 'vendor/lib64/libpsmoptfeature.so', 'vendor/lib64/libsnapdragoncolor-manager.so', 'vendor/lib64/libstandbyfeature.so', 'vendor/lib64/libvideooptfeature.so'): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     ('vendor/lib64/libqcrilNr.so', 'vendor/lib64/libril-db.so'): blob_fixup()
         .binary_regex_replace(rb'persist\.vendor\.radio\.poweron_opt', rb'persist.vendor.radio.poweron_ign'),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
