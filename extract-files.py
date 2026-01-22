@@ -66,6 +66,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('/my_product', '/product'),
     'system_ext/lib64/libwfdnative.so': blob_fixup()
         .add_needed('libinput_shim.so'),
+    'vendor/bin/qguard': blob_fixup()
+        .add_needed('libbase_shim.so'),
     'vendor/bin/hw/vendor.qti.hardware.display.composer-service': blob_fixup()
         .replace_needed('vendor.qti.hardware.display.config-V5-ndk_platform.so', 'vendor.qti.hardware.display.config-V5-ndk.so'),
     ('vendor/etc/media_cape/video_system_specs.json', 'vendor/etc/media_taro/video_system_specs.json'): blob_fixup()
