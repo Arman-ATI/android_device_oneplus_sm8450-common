@@ -82,7 +82,6 @@ oplus_bsp_kookong_ir_spi.ko
 qcom_pm8008-regulator.ko
 qpnp-amoled-regulator.ko
 hvc_gunyah.ko
-msm_rng.ko
 frpc-adsprpc.ko
 rdbg.ko
 lt9611uxc.ko
