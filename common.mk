@@ -410,7 +410,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     firmware_wlanmdsp.otaupdate_symlink \
     firmware_wlan_mac.bin_symlink \
-    firmware_WCNSS_qcom_cfg.ini_symlink
+    firmware_WCNSS_qcom_cfg.ini
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8450-common/sm8450-common-vendor.mk)
