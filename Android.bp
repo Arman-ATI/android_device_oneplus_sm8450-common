@@ -20,9 +20,10 @@ install_symlink {
     symlink_target: "/mnt/vendor/persist/qca6490/wlan_mac.bin",
 }
 
-install_symlink {
-    name: "firmware_WCNSS_qcom_cfg.ini_symlink",
+prebuilt_firmware {
+    name: "firmware_WCNSS_qcom_cfg.ini",
+    src: "configs/wlan/WCNSS_qcom_cfg.ini",
+    filename: "WCNSS_qcom_cfg.ini",
+    sub_dir: "wlan/qca_cld/qca6490",
     vendor: true,
-    installed_location: "firmware/wlan/qca_cld/qca6490/WCNSS_qcom_cfg.ini",
-    symlink_target: "/odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini",
 }
